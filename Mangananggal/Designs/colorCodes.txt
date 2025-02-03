@@ -1,0 +1,6 @@
+
+--platinum: #D9D9D9ff;
+--eerie-black: #1F1F1Fff;
+--red-crayola: #ED2553ff;
+--black: #000000ff;
+--jet: #383838ff;

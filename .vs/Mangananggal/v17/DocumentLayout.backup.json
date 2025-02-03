@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\returnertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\returnertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\returnertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\returnertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\borrowtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\borrowtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\returnertable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\returnertable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\borrowtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\borrowtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReturnerTable.Designer.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\ReturnerTable.Designer.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\ReturnerTable.Designer.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\ReturnerTable.Designer.cs*",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\ReturnerTable.Designer.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAYwDMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:32:24.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BorrowTable.cs [Design]",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\BorrowTable.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\BorrowTable.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\BorrowTable.cs [Design]",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\BorrowTable.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:30:34.558Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReturnerTable.cs [Design]",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\ReturnerTable.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\ReturnerTable.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\ReturnerTable.cs [Design]*",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\ReturnerTable.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:30:33.321Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReturnerTable.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\ReturnerTable.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\ReturnerTable.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\ReturnerTable.cs*",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\ReturnerTable.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwCIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:30:09.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BorrowTable.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\BorrowTable.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\BorrowTable.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\BorrowTable.cs",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\BorrowTable.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:30:05.199Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
