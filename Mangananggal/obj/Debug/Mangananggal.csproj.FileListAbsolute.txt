@@ -44,5 +44,5 @@ C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\CrystalDecisions.Repor
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\stdole.dll
-C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.csproj.CopyComplete
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.AdminForms.Reporting.resources
+C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Manganan.88251A48.Up2Date

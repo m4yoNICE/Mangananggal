@@ -7,6 +7,7 @@ namespace Mangananggal.Forms.Authentication
 {
     public partial class Register : Form
     {
+        public string staticSalt = "jasperbayot";
         public Register()
         {
             InitializeComponent();
@@ -17,7 +18,7 @@ namespace Mangananggal.Forms.Authentication
 
            
          
-        }
+        }                       
 
         private void lblBack_Click(object sender, EventArgs e)
         {
@@ -33,11 +34,18 @@ namespace Mangananggal.Forms.Authentication
                 MessageBox.Show("Fill out all fields");
                 return;
             }
+
+            if (!txtPassword.Text.Equals(txtConfPassword.Text))
+            {
+                MessageBox.Show("Confirm Password Not The The Same");
+                return;
+            }
+
             try
-            { 
-          
+            {
+                string staticSalt = "jasperbayot";
                 string sql = "INSERT INTO users (user_username, user_firstname, user_lastname, user_password, user_role) " +
-                                "VALUES (@Username, @Firstname, @Lastname, @Password, @Role)";
+             "VALUES (@Username, @Firstname, @Lastname, HASHBYTES('SHA2_256', @Password + 'jasperbayot'), @Role)";
                 using (var conn = Connection.conn())
                 {
                     conn.Open();
@@ -46,7 +54,7 @@ namespace Mangananggal.Forms.Authentication
                         cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                         cmd.Parameters.AddWithValue("@Firstname", txtFName.Text);
                         cmd.Parameters.AddWithValue("@Lastname", txtLName.Text);
-                        cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+                        cmd.Parameters.AddWithValue("@Password", txtPassword.Text + staticSalt);
                         cmd.Parameters.AddWithValue("@Role", defaultRole);
 
                         int rowsAffected = cmd.ExecuteNonQuery();
@@ -67,6 +75,11 @@ namespace Mangananggal.Forms.Authentication
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void txtConfPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

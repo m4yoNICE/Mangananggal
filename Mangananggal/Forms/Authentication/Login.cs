@@ -75,13 +75,16 @@ namespace Mangananggal
             {
                 try
                 {
-                    string query = "SELECT user_role, user_username, user_id FROM users WHERE user_username = @Username AND user_password = @Password";
+                    string inputPassword = txtboxPassword.Text + "jasperbayot"; //append salt
+                    string query = "SELECT user_role, user_username, user_id " +
+                                       "FROM users WHERE user_username = @Username " +
+                                       "AND user_password = HASHBYTES('SHA2_256', @Password + 'jasperbayot')";
 
                     using (var conn = Connection.conn()) // Using 'var' for simplicity
                     using (var cmd = new SqlCommand(query, conn)) // Same here
                     {   
                         cmd.Parameters.AddWithValue("@Username", txtboxUsername.Text);
-                        cmd.Parameters.AddWithValue("@Password", txtboxPassword.Text);
+                        cmd.Parameters.AddWithValue("@Password", inputPassword);
                         conn.Open();
                         using (var reader = cmd.ExecuteReader())
                         {
