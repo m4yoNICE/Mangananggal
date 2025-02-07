@@ -26,6 +26,34 @@ namespace Mangananggal.Forms.Authentication
             this.Close();
         }
 
+        private bool IsPasswordComplex(string password)
+        {
+            // Check for minimum length
+            if (password.Length < 12)
+                return false;
+
+            bool hasUpper = false;
+            bool hasLower = false;
+            bool hasDigit = false;
+            bool hasSpecial = false;
+
+            // Iterate through each character in the password
+            foreach (char c in password)
+            {
+                if (char.IsUpper(c))
+                    hasUpper = true;
+                else if (char.IsLower(c))
+                    hasLower = true;
+                else if (char.IsDigit(c))
+                    hasDigit = true;
+                else if (!char.IsLetterOrDigit(c)) // if it's not a letter or digit, it's special
+                    hasSpecial = true;
+            }
+
+            // Return true only if all conditions are met
+            return hasUpper && hasLower && hasDigit && hasSpecial;
+        }
+
         private void btnRegister_Click(object sender, EventArgs e)
         {
             string defaultRole = "User";
@@ -38,6 +66,12 @@ namespace Mangananggal.Forms.Authentication
             if (!txtPassword.Text.Equals(txtConfPassword.Text))
             {
                 MessageBox.Show("Confirm Password Not The The Same");
+                return;
+            }
+
+            if (!IsPasswordComplex(txtPassword.Text))
+            {
+                MessageBox.Show("Password must be at least 12 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character.");
                 return;
             }
 
