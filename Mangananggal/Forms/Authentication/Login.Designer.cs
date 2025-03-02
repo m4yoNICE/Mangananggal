@@ -35,6 +35,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.lblError = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.forgorLbl = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtboxUsername
@@ -95,13 +96,28 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(596, 465);
+            this.button1.Location = new System.Drawing.Point(591, 495);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
             this.button1.Text = "test";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // forgorLbl
+            // 
+            this.forgorLbl.ActiveLinkColor = System.Drawing.Color.Red;
+            this.forgorLbl.AutoSize = true;
+            this.forgorLbl.BackColor = System.Drawing.Color.Transparent;
+            this.forgorLbl.LinkColor = System.Drawing.Color.White;
+            this.forgorLbl.Location = new System.Drawing.Point(516, 443);
+            this.forgorLbl.Name = "forgorLbl";
+            this.forgorLbl.Size = new System.Drawing.Size(88, 13);
+            this.forgorLbl.TabIndex = 6;
+            this.forgorLbl.TabStop = true;
+            this.forgorLbl.Text = "forget password?";
+            this.forgorLbl.VisitedLinkColor = System.Drawing.Color.White;
+            this.forgorLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgorLbl_LinkClicked);
             // 
             // Login
             // 
@@ -111,6 +127,7 @@
             this.BackgroundImage = global::Mangananggal.Properties.Resources._11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(848, 530);
+            this.Controls.Add(this.forgorLbl);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblRegister);
@@ -136,6 +153,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel forgorLbl;
     }
 }
 

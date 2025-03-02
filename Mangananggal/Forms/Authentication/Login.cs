@@ -16,7 +16,7 @@ namespace Mangananggal
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void ClearTextbox()
@@ -141,6 +141,12 @@ namespace Mangananggal
             {
                 MessageBox.Show("Connection failed!", "Database Connection", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void forgorLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new ForgetForm().Show();
+            this.Hide();
         }
     }
 }

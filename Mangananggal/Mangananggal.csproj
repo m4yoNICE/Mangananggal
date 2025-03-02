@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelper\DBHelper.cs" />
     <Compile Include="Forms\AdminForms\Reporting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +82,12 @@
     </Compile>
     <Compile Include="Forms\AdminForms\BorrowTable.Designer.cs">
       <DependentUpon>BorrowTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Authentication\ForgetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Authentication\ForgetForm.Designer.cs">
+      <DependentUpon>ForgetForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Navigation\UserNav.cs">
       <SubType>Form</SubType>
@@ -143,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\BorrowTable.resx">
       <DependentUpon>BorrowTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Authentication\ForgetForm.resx">
+      <DependentUpon>ForgetForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Navigation\UserNav.resx">
       <DependentUpon>UserNav.cs</DependentUpon>
