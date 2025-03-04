@@ -11,6 +11,7 @@ namespace Mangananggal.Forms.Authentication
 {
     public partial class ForgetForm : Form
     {
+        private int userId;
         public ForgetForm()
         {
             InitializeComponent();
@@ -24,7 +25,8 @@ namespace Mangananggal.Forms.Authentication
             panel1.Visible = true;
         }
 
-        private void txtUsername_TextChanged_1(object sender, EventArgs e)
+
+        private void btncheckUsername_Click(object sender, EventArgs e)
         {
             try
             {
@@ -62,18 +64,18 @@ namespace Mangananggal.Forms.Authentication
         {
             try
             {
+                // Retrieve user ID
                 string userQuery = "SELECT user_id FROM users WHERE user_username = '" + txtUsername.Text.Trim() + "'";
-                int userId = DBHelper.DBHelper.ExecuteScalarQuery(userQuery);
+                userId = DBHelper.DBHelper.ExecuteScalarQuery(userQuery);
 
-
+                // Generate a random OTP (6-digit)
                 Random random = new Random();
                 int otpCode = random.Next(100000, 999999);
 
-                string insertQuery = "INSERT INTO otp (user_id, otp_code, otp_expiration) VALUES (" + userId + ", " + otpCode + ", DATEADD(MINUTE, 1, GETDATE()))";
-                int rowsAffected = DBHelper.DBHelper.ExecuteNonQuery(insertQuery);
-
-
-
+                string insertQuery = "INSERT INTO otp (user_id, otp_code, otp_expiration) VALUES (@UserId, @OtpCode, DATEADD(MINUTE, 1, GETDATE()))";
+                int rowsAffected = DBHelper.DBHelper.ExecuteNonQuery(insertQuery,
+                    new SqlParameter("@UserId", userId),
+                    new SqlParameter("@OtpCode", otpCode));
                 if (rowsAffected > 0)
                 {
                     MessageBox.Show($"OTP Code is {otpCode}\nUse it within 1 minute", "OTP Code", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -84,7 +86,7 @@ namespace Mangananggal.Forms.Authentication
                     return;
                 }
 
-             
+                // Start the countdown timer
                 btnOTPsendcode.Enabled = false;
                 lblOTPcountdown.Text = $"You can send code again in {countdown} seconds";
                 lblOTPcountdown.Visible = true;
@@ -120,6 +122,33 @@ namespace Mangananggal.Forms.Authentication
 
         private void btnVerify_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string query = "SELECT COUNT(*) FROM otp WHERE otp_code = '" + txtOTPcode.Text.Trim() + "'";
+                int count = DBHelper.DBHelper.ExecuteScalarQuery(query);
+
+
+                if (count > 0)
+                {
+                    MessageBox.Show($"OTP Code Verified", "Verified", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Register register = new Register();
+                    register.ForgetChangePassword(userId); // Pass the userId to the Register form
+                    register.Show();
+                    this.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Code", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
+
+        
     }
 }

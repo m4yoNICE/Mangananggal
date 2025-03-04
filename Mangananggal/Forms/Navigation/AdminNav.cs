@@ -134,5 +134,10 @@ namespace Mangananggal.Forms.Navigation
         {
 
         }
+
+        private void panelShow_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

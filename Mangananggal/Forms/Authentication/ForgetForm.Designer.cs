@@ -38,6 +38,7 @@
             this.lblOTPcountdown = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblBack = new System.Windows.Forms.Label();
+            this.btncheckUsername = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblError
@@ -81,7 +82,6 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(356, 52);
             this.txtUsername.TabIndex = 11;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged_1);
             // 
             // lblCheckUsername
             // 
@@ -123,7 +123,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(37)))), ((int)(((byte)(83)))));
-            this.panel1.Location = new System.Drawing.Point(108, 322);
+            this.panel1.Location = new System.Drawing.Point(105, 327);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(418, 134);
             this.panel1.TabIndex = 15;
@@ -141,12 +141,28 @@
             this.lblBack.Text = "<";
             this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
             // 
+            // btncheckUsername
+            // 
+            this.btncheckUsername.BackColor = System.Drawing.Color.Black;
+            this.btncheckUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btncheckUsername.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btncheckUsername.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncheckUsername.ForeColor = System.Drawing.Color.White;
+            this.btncheckUsername.Location = new System.Drawing.Point(140, 301);
+            this.btncheckUsername.Name = "btncheckUsername";
+            this.btncheckUsername.Size = new System.Drawing.Size(133, 25);
+            this.btncheckUsername.TabIndex = 16;
+            this.btncheckUsername.Text = "Check Username";
+            this.btncheckUsername.UseVisualStyleBackColor = false;
+            this.btncheckUsername.Click += new System.EventHandler(this.btncheckUsername_Click);
+            // 
             // ForgetForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(653, 681);
+            this.Controls.Add(this.btncheckUsername);
             this.Controls.Add(this.lblBack);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblOTPcountdown);
@@ -177,5 +193,6 @@
         private System.Windows.Forms.Label lblOTPcountdown;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblBack;
+        private System.Windows.Forms.Button btncheckUsername;
     }
 }

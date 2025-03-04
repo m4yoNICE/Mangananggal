@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\forgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\forgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\dbhelper\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\dbhelper\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\forgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\forgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ForgetForm.cs",
               "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\ForgetForm.cs",
               "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\ForgetForm.cs",
               "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\ForgetForm.cs",
               "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\ForgetForm.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwCcAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T07:45:12.979Z",
               "IsPinned": true,
@@ -50,10 +66,60 @@
               "RelativeDocumentMoniker": "Mangananggal\\DBHelper\\DBHelper.cs",
               "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\DBHelper\\DBHelper.cs",
               "RelativeToolTip": "Mangananggal\\DBHelper\\DBHelper.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwBkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:57:49.866Z",
+              "WhenOpened": "2025-03-04T15:51:15.484Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Register.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\Register.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Register.cs",
+              "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\Register.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwGcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T15:06:38.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Login.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\Login.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Login.cs",
+              "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\Login.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAEwEcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T15:17:09.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Login.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\Login.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Login.cs [Design]",
+              "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T15:17:08.006Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cs [Design]",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Register.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\Register.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Register.cs [Design]",
+              "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\Register.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T15:06:37.594Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

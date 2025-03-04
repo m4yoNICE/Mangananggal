@@ -28,19 +28,27 @@ namespace Mangananggal.DBHelper
             }
         }
 
-        public static SqlDataReader ExecuteReaderQuery(string query)
+        public static SqlDataReader ExecuteReaderQuery(string query, params SqlParameter[] parameters)
         {
-            var connection = conn();
+            var connection = conn(); 
             var command = new SqlCommand(query, connection);
+            if (parameters != null)
+            {
+                command.Parameters.AddRange(parameters);
+            }
             connection.Open();
+          
             return command.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
         }
 
-        public static int ExecuteNonQuery(string query)
+        public static int ExecuteNonQuery(string query, params SqlParameter[] parameters)
         {
             using (var connection = conn())
             using (var command = new SqlCommand(query, connection))
             {
+                if (parameters != null)
+                    command.Parameters.AddRange(parameters);
+
                 connection.Open();
                 return command.ExecuteNonQuery();
             }

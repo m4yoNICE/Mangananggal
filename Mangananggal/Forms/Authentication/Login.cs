@@ -75,59 +75,51 @@ namespace Mangananggal
             {
                 try
                 {
-                    string inputPassword = txtboxPassword.Text + "jasperbayot"; //append salt
+                    // Append salt to the entered password
+                    string inputPassword = txtboxPassword.Text;
+
+                    // Build the query using parameters
                     string query = "SELECT user_role, user_username, user_id " +
-                                       "FROM users WHERE user_username = @Username " +
-                                       "AND user_password = HASHBYTES('SHA2_256', @Password + 'jasperbayot')";
+                                   "FROM users WHERE user_username = @Username " +
+                                   "AND user_password = HASHBYTES('SHA2_256', @Password + 'jasperbayot')";
 
-                    using (var conn = Connection.conn()) // Using 'var' for simplicity
-                    using (var cmd = new SqlCommand(query, conn)) // Same here
-                    {   
-                        cmd.Parameters.AddWithValue("@Username", txtboxUsername.Text);
-                        cmd.Parameters.AddWithValue("@Password", inputPassword);
-                        conn.Open();
-                        using (var reader = cmd.ExecuteReader())
+                    using (SqlDataReader reader = DBHelper.DBHelper.ExecuteReaderQuery(query,
+                             new SqlParameter("@Username", txtboxUsername.Text),
+                             new SqlParameter("@Password", inputPassword)))
+                    {
+                        if (reader.Read()) // If a row is returned, login is successful
                         {
-                            if (reader.Read()) // Check if any row is returned
-                            {
-                                string role = reader["user_role"].ToString().Trim(); // Trim any extra spaces
-                                string username = reader["user_username"].ToString().Trim();
-                                int userid = Convert.ToInt32(reader["user_id"]);
-                                lblError.Visible = false;
-                                MessageBox.Show("Login successful!");
-                                ClearTextbox();
-                               
+                            string role = reader["user_role"].ToString().Trim();
+                            string username = reader["user_username"].ToString().Trim();
+                            int userid = Convert.ToInt32(reader["user_id"]);
+                            lblError.Visible = false;
+                            MessageBox.Show("Login successful!");
+                            ClearTextbox();
 
-                                if (role == "Admin")
-                                {
-                                    new AdminNav().Show();
-                                    this.Hide();
-                                }
-                                else if (role == "User")
-                                {
-                                    UserNav.Welcome(username, userid);
-                                    new UserNav().Show();
-                                    this.Hide();
-                                }
-                                else
-                                {
-                                    MessageBox.Show("Invalid role assigned to user.");
-                                }
-                            }
-                            else
+                            if (role == "Admin")
                             {
-                                lblError.Text = "Invalid username or password.";
-                                lblError.Visible = true;
+                                new AdminNav().Show();
+                                this.Hide();
+                            }
+                            else if (role == "User")
+                            {
+                                UserNav.Welcome(username, userid);
+                                new UserNav().Show();
+                                this.Hide();
                             }
                         }
+                        else
+                        {
+                            lblError.Text = "Invalid username or password.";
+                            lblError.Visible = true;
+                        }
                     }
-
-
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
+
             }
         }
 

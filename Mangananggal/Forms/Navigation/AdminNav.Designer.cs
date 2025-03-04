@@ -234,6 +234,7 @@
             this.panelShow.Name = "panelShow";
             this.panelShow.Size = new System.Drawing.Size(1060, 557);
             this.panelShow.TabIndex = 1;
+            this.panelShow.Paint += new System.Windows.Forms.PaintEventHandler(this.panelShow_Paint);
             // 
             // AdminNav
             // 

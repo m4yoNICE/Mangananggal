@@ -7,7 +7,9 @@ namespace Mangananggal.Forms.Authentication
 {
     public partial class Register : Form
     {
-        public string staticSalt = "jasperbayot";
+        private bool notforget = true;
+        private int userId;
+
         public Register()
         {
             InitializeComponent();
@@ -57,7 +59,8 @@ namespace Mangananggal.Forms.Authentication
         private void btnRegister_Click(object sender, EventArgs e)
         {
             string defaultRole = "User";
-            if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
+
+            if (string.IsNullOrEmpty(txtPassword.Text) || string.IsNullOrEmpty(txtConfPassword.Text))
             {
                 MessageBox.Show("Fill out all fields");
                 return;
@@ -65,7 +68,7 @@ namespace Mangananggal.Forms.Authentication
 
             if (!txtPassword.Text.Equals(txtConfPassword.Text))
             {
-                MessageBox.Show("Confirm Password Not The The Same");
+                MessageBox.Show("Confirm Password Not The Same");
                 return;
             }
 
@@ -77,32 +80,40 @@ namespace Mangananggal.Forms.Authentication
 
             try
             {
-                string staticSalt = "jasperbayot";
-                string sql = "INSERT INTO users (user_username, user_firstname, user_lastname, user_password, user_role) " +
-             "VALUES (@Username, @Firstname, @Lastname, HASHBYTES('SHA2_256', @Password + 'jasperbayot'), @Role)";
-                using (var conn = Connection.conn())
-                {
-                    conn.Open();
-                    using (var cmd = new SqlCommand(sql, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-                        cmd.Parameters.AddWithValue("@Firstname", txtFName.Text);
-                        cmd.Parameters.AddWithValue("@Lastname", txtLName.Text);
-                        cmd.Parameters.AddWithValue("@Password", txtPassword.Text + staticSalt);
-                        cmd.Parameters.AddWithValue("@Role", defaultRole);
+                string sql;
+                int rowsAffected;
 
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Your Account has been Successfully Created", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            Program.loginForm.Show();
-                            this.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Error occurred while registering. Please try again.", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
+                if (notforget)
+                {
+                    sql = "INSERT INTO users (user_username, user_firstname, user_lastname, user_password, user_role) " +
+                          "VALUES (@Username, @Firstname, @Lastname, HASHBYTES('SHA2_256', @Password  + 'jasperbayot'), @Role)";
+
+                    rowsAffected = DBHelper.DBHelper.ExecuteNonQuery(sql,
+                        new SqlParameter("@Username", txtUsername.Text),
+                        new SqlParameter("@Firstname", txtFName.Text),
+                        new SqlParameter("@Lastname", txtLName.Text),
+                        new SqlParameter("@Password", txtPassword.Text),
+                        new SqlParameter("@Role", defaultRole));
+                }
+                else
+                {
+                    sql = "UPDATE users SET user_password = HASHBYTES('SHA2_256', @Password + 'jasperbayot') WHERE user_id = @UserId";
+
+                    rowsAffected = DBHelper.DBHelper.ExecuteNonQuery(sql,
+                        new SqlParameter("@Password", txtPassword.Text),
+                        new SqlParameter("@UserId", userId));
+                }
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show(notforget ? "Your Account has been Successfully Created" : "Password updated successfully!",
+                                    "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Program.loginForm.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Error occurred. Please try again.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -111,6 +122,40 @@ namespace Mangananggal.Forms.Authentication
             }
         }
 
+
+        public void ForgetChangePassword(int userid)
+        {
+            string query = "SELECT user_username, user_firstname, user_lastname FROM users WHERE user_id = " + userid;
+
+ 
+            using (SqlDataReader reader = DBHelper.DBHelper.ExecuteReaderQuery(query))
+            {
+                if (reader.Read())
+                {
+                    string username = reader["user_username"].ToString().Trim();
+                    string firstname = reader["user_firstname"].ToString().Trim();
+                    string lastname = reader["user_lastname"].ToString().Trim();
+
+                    txtUsername.Text = username;
+                    txtFName.Text = firstname;
+                    txtLName.Text = lastname;
+                    txtUsername.Enabled = false;
+                    txtFName.Enabled = false;
+                    txtLName.Enabled = false;
+
+                    notforget = false;
+                    userId = userid;
+                }
+                else
+                {
+                    MessageBox.Show("User not found.");
+                }
+            }
+
+
+        }
+
+      
         private void txtConfPassword_TextChanged(object sender, EventArgs e)
         {
 
