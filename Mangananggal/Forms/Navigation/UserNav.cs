@@ -16,8 +16,7 @@ namespace Mangananggal
     {
         public static string welcomestring;
         public static int userid;
-        public BorrowBook borrow = new BorrowBook();
-        public ReturnBook returnbook = new ReturnBook();
+        public BuyBook buybook = new BuyBook();
         public UserNav()
         {
             InitializeComponent();
@@ -38,13 +37,13 @@ namespace Mangananggal
         {
             panelShow.Controls.Clear();
 
-            borrow.TopLevel = false;
-            borrow.FormBorderStyle = FormBorderStyle.None;
-            panelShow.Controls.Add(borrow);
-            borrow.Size = panelShow.Size;
-            borrow.Location = new Point(0, 0);
-            borrow.getId(userid);
-            borrow.Show();
+            buybook.TopLevel = false;
+            buybook.FormBorderStyle = FormBorderStyle.None;
+            panelShow.Controls.Add(buybook);
+            buybook.Size = panelShow.Size;
+            buybook.Location = new Point(0, 0);
+            buybook.getId(userid);
+            buybook.Show();
             
         }
 
@@ -55,20 +54,17 @@ namespace Mangananggal
 
         private void pnlReturnBook_Click(object sender, EventArgs e)
         {
-            panelShow.Controls.Clear();
-
-            returnbook.TopLevel = false;
-            returnbook.FormBorderStyle = FormBorderStyle.None;
-            panelShow.Controls.Add(returnbook);
-            returnbook.Size = panelShow.Size;
-            returnbook.Location = new Point(0, 0);
-            returnbook.getId(userid);
-            returnbook.Show();
+ 
         }
 
         private void lblReturnBook_Click(object sender, EventArgs e)
         {
             pnlReturnBook_Click(sender, e);
+        }
+
+        private void panelShow_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

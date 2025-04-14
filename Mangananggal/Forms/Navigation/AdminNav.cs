@@ -15,8 +15,7 @@ namespace Mangananggal.Forms.Navigation
     {
         public UserTable usertable = new UserTable();
         public BookTable bookTable = new BookTable();
-        public BorrowTable borrowTable = new BorrowTable();
-        public ReturnerTable returnTable = new ReturnerTable();
+        public OrderTable orderTable = new OrderTable();
         public Reporting reporting = new Reporting();
 
         public AdminNav()
@@ -72,39 +71,17 @@ namespace Mangananggal.Forms.Navigation
         {
             panelShow.Controls.Clear();
 
-            borrowTable.TopLevel = false;
-            borrowTable.FormBorderStyle = FormBorderStyle.None;
-            panelShow.Controls.Add(borrowTable);
-            borrowTable.Size = panelShow.Size;
-            borrowTable.Location = new Point(0, 0);
-            borrowTable.Show();
+            orderTable.TopLevel = false;
+            orderTable.FormBorderStyle = FormBorderStyle.None;
+            panelShow.Controls.Add(orderTable);
+            orderTable.Size = panelShow.Size;
+            orderTable.Location = new Point(0, 0);
+            orderTable.Show();
         }
 
         private void lblBorrow_Click(object sender, EventArgs e)
         {
             pnlBorrow_Click(sender, e);
-        }
-
-        private void pnlBorrow_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnlReturn_Click(object sender, EventArgs e)
-        {
-            panelShow.Controls.Clear();
-
-            returnTable.TopLevel = false;
-            returnTable.FormBorderStyle = FormBorderStyle.None;
-            panelShow.Controls.Add(returnTable);
-            returnTable.Size = panelShow.Size;
-            returnTable.Location = new Point(0, 0);
-            returnTable.Show();
-        }
-
-        private void lblReturns_Click(object sender, EventArgs e)
-        {
-            pnlReturn_Click(sender, e);
         }
 
     

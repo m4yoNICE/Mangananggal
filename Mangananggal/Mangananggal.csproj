@@ -53,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBHelper\DBHelper.cs" />
+    <Compile Include="Forms\AdminForms\BookTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\BookTable.Designer.cs">
+      <DependentUpon>BookTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminForms\Reporting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,23 +71,11 @@
       <DependentUpon>ReportTransaction.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Forms\AdminForms\ReturnerTable.cs">
+    <Compile Include="Forms\AdminForms\OrderTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminForms\ReturnerTable.Designer.cs">
-      <DependentUpon>ReturnerTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\BookTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\BookTable.Designer.cs">
-      <DependentUpon>BookTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\BorrowTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\BorrowTable.Designer.cs">
-      <DependentUpon>BorrowTable.cs</DependentUpon>
+    <Compile Include="Forms\AdminForms\OrderTable.Designer.cs">
+      <DependentUpon>OrderTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Authentication\ForgetForm.cs">
       <SubType>Form</SubType>
@@ -121,20 +115,17 @@
     <Compile Include="Forms\Navigation\AdminNav.Designer.cs">
       <DependentUpon>AdminNav.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UserForms\BorrowBook.cs">
+    <Compile Include="Forms\UserForms\BuyBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UserForms\BorrowBook.Designer.cs">
-      <DependentUpon>BorrowBook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\UserForms\ReturnBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\UserForms\ReturnBook.Designer.cs">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
+    <Compile Include="Forms\UserForms\BuyBook.Designer.cs">
+      <DependentUpon>BuyBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AdminForms\BookTable.resx">
+      <DependentUpon>BookTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\Reporting.resx">
       <DependentUpon>Reporting.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,14 +133,8 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportTransaction.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\ReturnerTable.resx">
-      <DependentUpon>ReturnerTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\BookTable.resx">
-      <DependentUpon>BookTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\BorrowTable.resx">
-      <DependentUpon>BorrowTable.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AdminForms\OrderTable.resx">
+      <DependentUpon>OrderTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Authentication\ForgetForm.resx">
       <DependentUpon>ForgetForm.cs</DependentUpon>
@@ -169,11 +154,8 @@
     <EmbeddedResource Include="Forms\Navigation\AdminNav.resx">
       <DependentUpon>AdminNav.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UserForms\BorrowBook.resx">
-      <DependentUpon>BorrowBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UserForms\ReturnBook.resx">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UserForms\BuyBook.resx">
+      <DependentUpon>BuyBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

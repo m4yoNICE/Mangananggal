@@ -30,14 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserNav));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lblReport = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblBorrow = new System.Windows.Forms.Label();
-            this.pnlReturnBook = new System.Windows.Forms.Panel();
-            this.lblReturnBook = new System.Windows.Forms.Label();
-            this.pnlBorrow = new System.Windows.Forms.Panel();
-            this.Borrowlbl = new System.Windows.Forms.Label();
+            this.pnlBuyBooks = new System.Windows.Forms.Panel();
+            this.lblBooks = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlHome = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -45,10 +39,7 @@
             this.panelShow = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.pnlReturnBook.SuspendLayout();
-            this.pnlBorrow.SuspendLayout();
+            this.pnlBuyBooks.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,10 +50,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.pnlReturnBook);
-            this.panel1.Controls.Add(this.pnlBorrow);
+            this.panel1.Controls.Add(this.pnlBuyBooks);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -70,89 +58,27 @@
             this.panel1.Size = new System.Drawing.Size(1060, 71);
             this.panel1.TabIndex = 0;
             // 
-            // panel5
+            // pnlBuyBooks
             // 
-            this.panel5.Controls.Add(this.lblReport);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(572, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(143, 71);
-            this.panel5.TabIndex = 4;
+            this.pnlBuyBooks.Controls.Add(this.lblBooks);
+            this.pnlBuyBooks.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlBuyBooks.Location = new System.Drawing.Point(143, 0);
+            this.pnlBuyBooks.Name = "pnlBuyBooks";
+            this.pnlBuyBooks.Size = new System.Drawing.Size(143, 71);
+            this.pnlBuyBooks.TabIndex = 1;
+            this.pnlBuyBooks.Click += new System.EventHandler(this.pnlBorrow_Click);
             // 
-            // lblReport
+            // lblBooks
             // 
-            this.lblReport.AutoSize = true;
-            this.lblReport.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.lblReport.Location = new System.Drawing.Point(36, 24);
-            this.lblReport.Name = "lblReport";
-            this.lblReport.Size = new System.Drawing.Size(65, 24);
-            this.lblReport.TabIndex = 0;
-            this.lblReport.Text = "Users";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.lblBorrow);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(429, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(143, 71);
-            this.panel4.TabIndex = 3;
-            // 
-            // lblBorrow
-            // 
-            this.lblBorrow.AutoSize = true;
-            this.lblBorrow.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBorrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.lblBorrow.Location = new System.Drawing.Point(26, 24);
-            this.lblBorrow.Name = "lblBorrow";
-            this.lblBorrow.Size = new System.Drawing.Size(88, 24);
-            this.lblBorrow.TabIndex = 0;
-            this.lblBorrow.Text = "Borrows";
-            // 
-            // pnlReturnBook
-            // 
-            this.pnlReturnBook.Controls.Add(this.lblReturnBook);
-            this.pnlReturnBook.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlReturnBook.Location = new System.Drawing.Point(286, 0);
-            this.pnlReturnBook.Name = "pnlReturnBook";
-            this.pnlReturnBook.Size = new System.Drawing.Size(143, 71);
-            this.pnlReturnBook.TabIndex = 2;
-            this.pnlReturnBook.Click += new System.EventHandler(this.pnlReturnBook_Click);
-            // 
-            // lblReturnBook
-            // 
-            this.lblReturnBook.AutoSize = true;
-            this.lblReturnBook.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReturnBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.lblReturnBook.Location = new System.Drawing.Point(36, 24);
-            this.lblReturnBook.Name = "lblReturnBook";
-            this.lblReturnBook.Size = new System.Drawing.Size(72, 24);
-            this.lblReturnBook.TabIndex = 0;
-            this.lblReturnBook.Text = "Return";
-            this.lblReturnBook.Click += new System.EventHandler(this.lblReturnBook_Click);
-            // 
-            // pnlBorrow
-            // 
-            this.pnlBorrow.Controls.Add(this.Borrowlbl);
-            this.pnlBorrow.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlBorrow.Location = new System.Drawing.Point(143, 0);
-            this.pnlBorrow.Name = "pnlBorrow";
-            this.pnlBorrow.Size = new System.Drawing.Size(143, 71);
-            this.pnlBorrow.TabIndex = 1;
-            this.pnlBorrow.Click += new System.EventHandler(this.pnlBorrow_Click);
-            // 
-            // Borrowlbl
-            // 
-            this.Borrowlbl.AutoSize = true;
-            this.Borrowlbl.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Borrowlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Borrowlbl.Location = new System.Drawing.Point(36, 24);
-            this.Borrowlbl.Name = "Borrowlbl";
-            this.Borrowlbl.Size = new System.Drawing.Size(77, 24);
-            this.Borrowlbl.TabIndex = 0;
-            this.Borrowlbl.Text = "Borrow";
-            this.Borrowlbl.Click += new System.EventHandler(this.Borrowlbl_Click);
+            this.lblBooks.AutoSize = true;
+            this.lblBooks.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBooks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.lblBooks.Location = new System.Drawing.Point(16, 24);
+            this.lblBooks.Name = "lblBooks";
+            this.lblBooks.Size = new System.Drawing.Size(111, 24);
+            this.lblBooks.TabIndex = 0;
+            this.lblBooks.Text = "Buy Books";
+            this.lblBooks.Click += new System.EventHandler(this.Borrowlbl_Click);
             // 
             // panel2
             // 
@@ -202,6 +128,7 @@
             this.panelShow.Name = "panelShow";
             this.panelShow.Size = new System.Drawing.Size(1060, 557);
             this.panelShow.TabIndex = 1;
+            this.panelShow.Paint += new System.Windows.Forms.PaintEventHandler(this.panelShow_Paint);
             // 
             // label1
             // 
@@ -228,14 +155,8 @@
             this.Text = "panel";
             this.Load += new System.EventHandler(this.UserNav_Load);
             this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.pnlReturnBook.ResumeLayout(false);
-            this.pnlReturnBook.PerformLayout();
-            this.pnlBorrow.ResumeLayout(false);
-            this.pnlBorrow.PerformLayout();
+            this.pnlBuyBooks.ResumeLayout(false);
+            this.pnlBuyBooks.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.pnlHome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -251,17 +172,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel pnlBorrow;
+        private System.Windows.Forms.Panel pnlBuyBooks;
         private System.Windows.Forms.Panel pnlHome;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label Borrowlbl;
+        private System.Windows.Forms.Label lblBooks;
         private System.Windows.Forms.Panel panelShow;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblReport;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblBorrow;
-        private System.Windows.Forms.Panel pnlReturnBook;
-        private System.Windows.Forms.Label lblReturnBook;
         private System.Windows.Forms.Label label1;
     }
 }

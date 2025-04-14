@@ -32,10 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlReport = new System.Windows.Forms.Panel();
             this.lblReport = new System.Windows.Forms.Label();
-            this.pnlReturn = new System.Windows.Forms.Panel();
-            this.lblReturns = new System.Windows.Forms.Label();
             this.pnlBorrow = new System.Windows.Forms.Panel();
-            this.lblBorrow = new System.Windows.Forms.Label();
+            this.lblOrder = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblBooks = new System.Windows.Forms.Label();
             this.pnlUser = new System.Windows.Forms.Panel();
@@ -47,7 +45,6 @@
             this.panelShow = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.pnlReport.SuspendLayout();
-            this.pnlReturn.SuspendLayout();
             this.pnlBorrow.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnlUser.SuspendLayout();
@@ -61,7 +58,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.panel1.Controls.Add(this.pnlReport);
-            this.panel1.Controls.Add(this.pnlReturn);
             this.panel1.Controls.Add(this.pnlBorrow);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.pnlUser);
@@ -77,7 +73,7 @@
             // 
             this.pnlReport.Controls.Add(this.lblReport);
             this.pnlReport.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlReport.Location = new System.Drawing.Point(715, 0);
+            this.pnlReport.Location = new System.Drawing.Point(572, 0);
             this.pnlReport.Name = "pnlReport";
             this.pnlReport.Size = new System.Drawing.Size(143, 71);
             this.pnlReport.TabIndex = 5;
@@ -96,50 +92,27 @@
             this.lblReport.Text = "Report";
             this.lblReport.Click += new System.EventHandler(this.lblReport_Click);
             // 
-            // pnlReturn
-            // 
-            this.pnlReturn.Controls.Add(this.lblReturns);
-            this.pnlReturn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlReturn.Location = new System.Drawing.Point(572, 0);
-            this.pnlReturn.Name = "pnlReturn";
-            this.pnlReturn.Size = new System.Drawing.Size(143, 71);
-            this.pnlReturn.TabIndex = 4;
-            this.pnlReturn.Click += new System.EventHandler(this.pnlReturn_Click);
-            // 
-            // lblReturns
-            // 
-            this.lblReturns.AutoSize = true;
-            this.lblReturns.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReturns.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.lblReturns.Location = new System.Drawing.Point(36, 24);
-            this.lblReturns.Name = "lblReturns";
-            this.lblReturns.Size = new System.Drawing.Size(83, 24);
-            this.lblReturns.TabIndex = 0;
-            this.lblReturns.Text = "Returns";
-            this.lblReturns.Click += new System.EventHandler(this.lblReturns_Click);
-            // 
             // pnlBorrow
             // 
-            this.pnlBorrow.Controls.Add(this.lblBorrow);
+            this.pnlBorrow.Controls.Add(this.lblOrder);
             this.pnlBorrow.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlBorrow.Location = new System.Drawing.Point(429, 0);
             this.pnlBorrow.Name = "pnlBorrow";
             this.pnlBorrow.Size = new System.Drawing.Size(143, 71);
             this.pnlBorrow.TabIndex = 3;
             this.pnlBorrow.Click += new System.EventHandler(this.pnlBorrow_Click);
-            this.pnlBorrow.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBorrow_Paint);
             // 
-            // lblBorrow
+            // lblOrder
             // 
-            this.lblBorrow.AutoSize = true;
-            this.lblBorrow.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBorrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.lblBorrow.Location = new System.Drawing.Point(26, 24);
-            this.lblBorrow.Name = "lblBorrow";
-            this.lblBorrow.Size = new System.Drawing.Size(88, 24);
-            this.lblBorrow.TabIndex = 0;
-            this.lblBorrow.Text = "Borrows";
-            this.lblBorrow.Click += new System.EventHandler(this.lblBorrow_Click);
+            this.lblOrder.AutoSize = true;
+            this.lblOrder.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.lblOrder.Location = new System.Drawing.Point(26, 24);
+            this.lblOrder.Name = "lblOrder";
+            this.lblOrder.Size = new System.Drawing.Size(74, 24);
+            this.lblOrder.TabIndex = 0;
+            this.lblOrder.Text = "Orders";
+            this.lblOrder.Click += new System.EventHandler(this.lblBorrow_Click);
             // 
             // panel3
             // 
@@ -251,8 +224,6 @@
             this.panel1.ResumeLayout(false);
             this.pnlReport.ResumeLayout(false);
             this.pnlReport.PerformLayout();
-            this.pnlReturn.ResumeLayout(false);
-            this.pnlReturn.PerformLayout();
             this.pnlBorrow.ResumeLayout(false);
             this.pnlBorrow.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -277,10 +248,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label userlbl;
         private System.Windows.Forms.Panel panelShow;
-        private System.Windows.Forms.Panel pnlReturn;
-        private System.Windows.Forms.Label lblReturns;
         private System.Windows.Forms.Panel pnlBorrow;
-        private System.Windows.Forms.Label lblBorrow;
+        private System.Windows.Forms.Label lblOrder;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblBooks;
         private System.Windows.Forms.Panel pnlReport;

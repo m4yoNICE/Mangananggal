@@ -3,28 +3,48 @@
   "WorkspaceRootPath": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\navigation\\adminnav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\navigation\\adminnav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\dbhelper\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\dbhelper\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\ordertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\ordertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\ordertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\ordertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\forgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\forgetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\booktable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\booktable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\navigation\\adminnav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\navigation\\adminnav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\authentication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\authentication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\ordertable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\ordertable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\adminforms\\booktable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\adminforms\\booktable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\navigation\\usernav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\navigation\\usernav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\userforms\\buybook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\userforms\\buybook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\userforms\\buybook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\userforms\\buybook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|c:\\codes\\appsdev (c#)\\mangananggal\\mangananggal\\forms\\navigation\\usernav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{924D3ADC-63B5-4A52-936E-E162D473D6C8}|Mangananggal\\Mangananggal.csproj|solutionrelative:mangananggal\\forms\\navigation\\usernav.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,22 +54,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ForgetForm.cs",
-              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\ForgetForm.cs",
-              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\ForgetForm.cs",
-              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\ForgetForm.cs",
-              "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\ForgetForm.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T07:45:12.979Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
@@ -60,65 +66,140 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DBHelper.cs",
-              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\DBHelper\\DBHelper.cs",
-              "RelativeDocumentMoniker": "Mangananggal\\DBHelper\\DBHelper.cs",
-              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\DBHelper\\DBHelper.cs",
-              "RelativeToolTip": "Mangananggal\\DBHelper\\DBHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdminNav.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Navigation\\AdminNav.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Navigation\\AdminNav.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Navigation\\AdminNav.cs",
+              "RelativeToolTip": "Mangananggal\\Forms\\Navigation\\AdminNav.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAmwEYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T15:51:15.484Z",
+              "WhenOpened": "2025-04-14T13:24:16.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cs",
-              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Register.cs",
-              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\Register.cs",
-              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Register.cs",
-              "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\Register.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAcwGcAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AdminNav.cs [Design]",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Navigation\\AdminNav.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Navigation\\AdminNav.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Navigation\\AdminNav.cs [Design]",
+              "RelativeToolTip": "Mangananggal\\Forms\\Navigation\\AdminNav.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T15:06:38.961Z",
+              "WhenOpened": "2025-04-14T13:23:05.342Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderTable.Designer.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\OrderTable.Designer.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\OrderTable.Designer.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\OrderTable.Designer.cs",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\OrderTable.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwC0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:05:05.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookTable.cs [Design]",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\BookTable.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\BookTable.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\BookTable.cs [Design]",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\BookTable.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:04:30.98Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderTable.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\OrderTable.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\OrderTable.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\OrderTable.cs",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\OrderTable.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAIwDIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:02:50.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Login.cs",
-              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\Login.cs",
-              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Login.cs",
-              "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\Login.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAEwEcAAAAoAAAAAAAAAA==",
+              "Title": "OrderTable.cs [Design]",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\OrderTable.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\OrderTable.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\OrderTable.cs [Design]",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\OrderTable.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T15:17:09.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Login.cs",
-              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\Login.cs",
-              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Login.cs [Design]",
-              "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T15:17:08.006Z",
+              "WhenOpened": "2025-04-14T13:02:47.179Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cs [Design]",
-              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Register.cs",
-              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Authentication\\Register.cs",
-              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Authentication\\Register.cs [Design]",
-              "RelativeToolTip": "Mangananggal\\Forms\\Authentication\\Register.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "BookTable.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\BookTable.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\AdminForms\\BookTable.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\AdminForms\\BookTable.cs",
+              "RelativeToolTip": "Mangananggal\\Forms\\AdminForms\\BookTable.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAgwIgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T15:06:37.594Z",
+              "WhenOpened": "2025-04-14T13:02:36.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserNav.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Navigation\\UserNav.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Navigation\\UserNav.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Navigation\\UserNav.cs",
+              "RelativeToolTip": "Mangananggal\\Forms\\Navigation\\UserNav.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:39:54.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserNav.cs [Design]",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Navigation\\UserNav.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\Navigation\\UserNav.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\Navigation\\UserNav.cs [Design]",
+              "RelativeToolTip": "Mangananggal\\Forms\\Navigation\\UserNav.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T12:39:52.092Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BuyBook.cs",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\UserForms\\BuyBook.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\UserForms\\BuyBook.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\UserForms\\BuyBook.cs",
+              "RelativeToolTip": "Mangananggal\\Forms\\UserForms\\BuyBook.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAowFoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T11:57:13.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BuyBook.cs [Design]",
+              "DocumentMoniker": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\UserForms\\BuyBook.cs",
+              "RelativeDocumentMoniker": "Mangananggal\\Forms\\UserForms\\BuyBook.cs",
+              "ToolTip": "C:\\Codes\\Appsdev (C#)\\Mangananggal\\Mangananggal\\Forms\\UserForms\\BuyBook.cs [Design]",
+              "RelativeToolTip": "Mangananggal\\Forms\\UserForms\\BuyBook.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T11:57:08.825Z",
               "EditorCaption": " [Design]"
             }
           ]

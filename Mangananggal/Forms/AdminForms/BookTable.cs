@@ -29,6 +29,7 @@ namespace Mangananggal.Forms.AdminForms
             txtName.Text = string.Empty;
             txtAuthor.Text = string.Empty;
             txtGenre.Text = string.Empty;
+            txtPrice.Text = string.Empty;
 
         }
 
@@ -57,6 +58,8 @@ namespace Mangananggal.Forms.AdminForms
                     txtName.Text = dataGridView1.Rows[e.RowIndex].Cells["book_name"].Value?.ToString();
                     txtAuthor.Text = dataGridView1.Rows[e.RowIndex].Cells["book_author"].Value?.ToString();
                     txtGenre.Text = dataGridView1.Rows[e.RowIndex].Cells["book_genre"].Value?.ToString();
+                    txtPrice.Text = dataGridView1.Rows[e.RowIndex].Cells["book_price"].Value?.ToString();
+
                 }
             }
             catch (Exception ex)
@@ -72,10 +75,16 @@ namespace Mangananggal.Forms.AdminForms
                 MessageBox.Show("Fill out all fields");
                 return;
             }
+            decimal bookPrice;
+            if (!decimal.TryParse(txtPrice.Text, out bookPrice))
+            {
+                MessageBox.Show("Please enter a valid price.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             try
             {
-                string sql = "INSERT INTO books (book_name, book_author, book_genre) " +
-                             "VALUES (@BookName, @BookAuthor, @BookGenre)";
+                string sql = "INSERT INTO books (book_name, book_author, book_genre, book_price) " +
+                             "VALUES (@BookName, @BookAuthor, @BookGenre, @BookPrice)";
                 using (var conn = Connection.conn())
                 {
                     conn.Open();
@@ -84,6 +93,7 @@ namespace Mangananggal.Forms.AdminForms
                         cmd.Parameters.AddWithValue("@BookName", txtName.Text);
                         cmd.Parameters.AddWithValue("@BookAuthor", txtAuthor.Text);
                         cmd.Parameters.AddWithValue("@BookGenre", txtGenre.Text);
+                        cmd.Parameters.AddWithValue("@BookPrice", txtPrice.Text);
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
@@ -110,6 +120,7 @@ namespace Mangananggal.Forms.AdminForms
             string bookName = txtName.Text.Trim();
             string bookAuthor = txtAuthor.Text.Trim();
             string bookGenre = txtGenre.Text.Trim();
+            decimal bookPrice;
 
             // Validate input fields
             if (string.IsNullOrEmpty(bookName) || string.IsNullOrEmpty(bookAuthor) || string.IsNullOrEmpty(bookGenre))
@@ -117,6 +128,14 @@ namespace Mangananggal.Forms.AdminForms
                 MessageBox.Show("Please fill out all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+            // Try to parse the price input
+            if (!decimal.TryParse(txtPrice.Text, out bookPrice))
+            {
+                MessageBox.Show("Please enter a valid price.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
 
             try
             {
@@ -132,7 +151,8 @@ namespace Mangananggal.Forms.AdminForms
                         string sql = @"UPDATE books 
                                 SET book_name = @BookName, 
                                     book_author = @BookAuthor, 
-                                    book_genre = @BookGenre 
+                                    book_genre = @BookGenre,
+                                    book_price = @BookPrice
                                 WHERE book_id = @BookID";
 
                         // Open connection and execute command
@@ -146,6 +166,7 @@ namespace Mangananggal.Forms.AdminForms
                                 cmd.Parameters.AddWithValue("@BookAuthor", bookAuthor);
                                 cmd.Parameters.AddWithValue("@BookGenre", bookGenre);
                                 cmd.Parameters.AddWithValue("@BookID", bookID);
+                                cmd.Parameters.AddWithValue("@BookPrice", bookPrice);
 
                                 // Execute query and handle results
                                 int rowsAffected = cmd.ExecuteNonQuery();

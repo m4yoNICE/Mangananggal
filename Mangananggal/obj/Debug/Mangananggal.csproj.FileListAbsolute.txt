@@ -15,7 +15,6 @@ C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.Adm
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Login.resources
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.Authentication.Register.resources
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.Navigation.AdminNav.resources
-C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.UserForms.BorrowBook.resources
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Properties.Resources.resources
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.csproj.GenerateResource.cache
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.csproj.CoreCompileInputs.cache
@@ -24,9 +23,6 @@ C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\Mangananggal.exe
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\Mangananggal.pdb
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.exe
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.pdb
-C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.UserForms.ReturnBook.resources
-C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.AdminForms.BorrowTable.resources
-C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.AdminForms.ReturnerTable.resources
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\CrystalDecisions.ReportSource.dll
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\CrystalDecisions.Shared.dll
@@ -47,3 +43,5 @@ C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\stdole.dll
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.AdminForms.Reporting.resources
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Manganan.88251A48.Up2Date
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.Authentication.ForgetForm.resources
+C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.UserForms.BuyBook.resources
+C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.AdminForms.OrderTable.resources
