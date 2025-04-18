@@ -184,6 +184,7 @@
     <None Include="Designs\mangananggalLogo.png" />
     <None Include="Designs\1.png" />
     <None Include="Designs\2.png" />
+    <Content Include="Connections\schema.sql" />
     <Content Include="Designs\colorCodes.txt" />
   </ItemGroup>
   <ItemGroup>
