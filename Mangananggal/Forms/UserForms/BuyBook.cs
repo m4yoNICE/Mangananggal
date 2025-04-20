@@ -44,7 +44,6 @@ namespace Mangananggal.Forms.UserForms
 
         private void AddQuantityColumn()
         {
-            // Add a quantity column for user input
             if (!dataGridView1.Columns.Contains("Quantity"))
             {
                 var qtyColumn = new DataGridViewTextBoxColumn
@@ -93,24 +92,38 @@ namespace Mangananggal.Forms.UserForms
 
         private void AddToCart(int bookId, int quantity)
         {
-            // Check if the book is already in the cart
+            string priceQuery = $"SELECT book_price FROM books WHERE book_id = {bookId}";
+            decimal price = DBHelper.DBHelper.ExecuteScalarQuery(priceQuery);
+
             var existingItem = selectedItems.Find(item => item.ProductId == bookId);
             if (existingItem != null)
             {
-                // Update the quantity of the existing item
                 existingItem.Quantity += quantity;
             }
             else
             {
-                // Add new item to cart
                 selectedItems.Add(new OrderItem
                 {
                     ProductId = bookId,
-                    Quantity = quantity
+                    Quantity = quantity,
+                    Price = price
                 });
             }
 
-            MessageBox.Show($"Book ID: {bookId} added to cart.");
+            UpdateTotalAmount();
+
+            MessageBox.Show($"Book ID: {bookId} added to cart at ₱{price} each.");
+        }
+
+        private void UpdateTotalAmount()
+        {
+            decimal totalAmount = 0;
+            foreach (var item in selectedItems)
+            {
+                totalAmount += item.Quantity * item.Price;
+            }
+            // Update the txtTotal textbox with the new total amount
+            txtTotal.Text = totalAmount.ToString("F2");
         }
         public class OrderItem
         {
@@ -127,10 +140,25 @@ namespace Mangananggal.Forms.UserForms
                 return;
             }
 
+            // Parse the amount paid by the user
+            if (!decimal.TryParse(txtAmount.Text, out decimal amountPaid))
+            {
+                MessageBox.Show("Please enter a valid amount paid.");
+                return;
+            }
+
             decimal totalAmount = 0;
             foreach (var item in selectedItems)
             {
                 totalAmount += item.Quantity * item.Price;
+            }
+
+            decimal changeDue = amountPaid - totalAmount;
+
+            if (amountPaid < totalAmount)
+            {
+                MessageBox.Show("Insufficient amount paid.");
+                return;
             }
 
             using (var conn = Connection.conn())
@@ -140,15 +168,30 @@ namespace Mangananggal.Forms.UserForms
                 {
                     try
                     {
-                        // Insert a record into the orders table
-                        string orderQuery = "INSERT INTO orders (user_id, order_date, total_amount) OUTPUT INSERTED.order_id VALUES (@UserId, @OrderDate, @Total)";
+                        // Insert order record with new fields
+                        string orderQuery = @"
+                    INSERT INTO orders (
+                        user_id, order_date, total_amount,
+                        amount_paid, change_due
+                    )
+                    OUTPUT INSERTED.order_id
+                    VALUES (
+                        @UserId, @OrderDate, @Total,
+                        @Paid, @Change
+                    )";
+
+
+
                         SqlCommand orderCmd = new SqlCommand(orderQuery, conn, transaction);
                         orderCmd.Parameters.AddWithValue("@UserId", currentUserId);
                         orderCmd.Parameters.AddWithValue("@OrderDate", DateTime.Now);
                         orderCmd.Parameters.AddWithValue("@Total", totalAmount);
+                        orderCmd.Parameters.AddWithValue("@Paid", amountPaid);
+                        orderCmd.Parameters.AddWithValue("@Change", changeDue);
+
                         int orderId = (int)orderCmd.ExecuteScalar();
 
-                        // Insert each item into the order_items table
+                        // Insert order items
                         foreach (var item in selectedItems)
                         {
                             string itemQuery = "INSERT INTO order_items (order_id, product_id, quantity, price) VALUES (@OrderId, @ProductId, @Qty, @Price)";
@@ -161,8 +204,8 @@ namespace Mangananggal.Forms.UserForms
                         }
 
                         transaction.Commit();
-                        MessageBox.Show("Order placed successfully!");
-                        selectedItems.Clear(); // Clear cart after placing the order
+                        MessageBox.Show($"Order placed successfully! Change: ₱{changeDue:F2}");
+                        selectedItems.Clear();
                     }
                     catch (Exception ex)
                     {
