@@ -60,8 +60,12 @@ namespace Mangananggal.Forms.AdminForms.Reports
 
                     crystalReportViewer1.ReportSource = rpt;
                     crystalReportViewer1.Refresh();
+
+                    string exportPath = Path.Combine(Application.StartupPath, "Forms/AdminForms/Reports/SalesReport.pdf");
+                    rpt.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, exportPath);
+                    MessageBox.Show("PDF exported to:\n" + exportPath);
                 }
-                   
+
             }
         }
     }
