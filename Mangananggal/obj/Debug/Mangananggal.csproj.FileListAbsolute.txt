@@ -40,8 +40,10 @@ C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\CrystalDecisions.Repor
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\stdole.dll
-C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.AdminForms.Reporting.resources
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Manganan.88251A48.Up2Date
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.Authentication.ForgetForm.resources
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.UserForms.BuyBook.resources
 C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.AdminForms.OrderTable.resources
+C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\obj\Debug\Mangananggal.Forms.AdminForms.Reports.Reports.resources
+C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\Forms\AdminForms\Reports\SaleReport.rpt
+C:\Codes\Appsdev (C#)\Mangananggal\Mangananggal\bin\Debug\Forms\AdminForms\Reports\SaleReport.cs

@@ -38,7 +38,7 @@ namespace Mangananggal.Forms.AdminForms
             using (var conn = Connection.conn())
             {
                 // Define the SQL query to fetch users from the Users table
-                string query = "SELECT book_id, book_name, book_author, book_genre FROM books";
+                string query = "SELECT book_id, book_name, book_author, book_genre, book_price FROM books";
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
                 DataTable dataTable = new DataTable();
                 dataAdapter.Fill(dataTable);

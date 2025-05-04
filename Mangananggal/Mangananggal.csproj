@@ -59,23 +59,29 @@
     <Compile Include="Forms\AdminForms\BookTable.Designer.cs">
       <DependentUpon>BookTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminForms\Reporting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AdminForms\Reporting.Designer.cs">
-      <DependentUpon>Reporting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\AdminForms\ReportTransaction.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReportTransaction.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Forms\AdminForms\OrderTable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AdminForms\OrderTable.Designer.cs">
       <DependentUpon>OrderTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Reports\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Reports\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Reports\SaleReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaleReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Forms\AdminForms\Reports\SalesReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReportDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Forms\Authentication\ForgetForm.cs">
       <SubType>Form</SubType>
@@ -126,16 +132,17 @@
     <EmbeddedResource Include="Forms\AdminForms\BookTable.resx">
       <DependentUpon>BookTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\Reporting.resx">
-      <DependentUpon>Reporting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\ReportTransaction.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReportTransaction.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\OrderTable.resx">
       <DependentUpon>OrderTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\Reports\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Forms\AdminForms\Reports\SaleReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SaleReport.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Forms\Authentication\ForgetForm.resx">
       <DependentUpon>ForgetForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +174,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Forms\AdminForms\Reports\SalesReportDataSet.xsc">
+      <DependentUpon>SalesReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\AdminForms\Reports\SalesReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forms\AdminForms\Reports\SalesReportDataSet.xss">
+      <DependentUpon>SalesReportDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

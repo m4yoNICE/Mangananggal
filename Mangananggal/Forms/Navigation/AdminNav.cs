@@ -1,4 +1,5 @@
 ﻿using Mangananggal.Forms.AdminForms;
+using Mangananggal.Forms.AdminForms.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,8 +17,7 @@ namespace Mangananggal.Forms.Navigation
         public UserTable usertable = new UserTable();
         public BookTable bookTable = new BookTable();
         public OrderTable orderTable = new OrderTable();
-        public Reporting reporting = new Reporting();
-
+        public Reports reports = new Reports();
         public AdminNav()
         {
             InitializeComponent();
@@ -89,12 +89,12 @@ namespace Mangananggal.Forms.Navigation
         {
             panelShow.Controls.Clear();
 
-            reporting.TopLevel = false;
-            reporting.FormBorderStyle = FormBorderStyle.None;
-            panelShow.Controls.Add(reporting);
-            reporting.Size = panelShow.Size;
-            reporting.Location = new Point(0, 0);
-            reporting.Show();
+            reports.TopLevel = false;
+            reports.FormBorderStyle = FormBorderStyle.None;
+            panelShow.Controls.Add(reports);
+            reports.Size = panelShow.Size;
+            reports.Location = new Point(0, 0);
+            reports.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
